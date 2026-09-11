@@ -1,0 +1,34 @@
+﻿ПРОТОКОЛ ПРОВЕРКИ
+Дата: 11.09.2026
+ОС: Windows 10
+Python: 3.12.14
+Интерфейс Qt проверен автоматизированно в offscreen-режиме.
+PyCharm как приложение не запускался.
+Обучение: 1000 измерений нормы, seed=42.
+Контроль: 600 измерений, seed=77.
+Данные демонстрационные; подключение к Белтелекому отсутствует.
+
+test_csv_roundtrip_and_unlabeled (test_app.AppTests.test_csv_roundtrip_and_unlabeled) ... ok
+test_database_reopen (test_app.AppTests.test_database_reopen) ... ok
+test_gui_demo_filter_history (test_app.AppTests.test_gui_demo_filter_history) ... ok
+test_independent_demo_quality (test_app.AppTests.test_independent_demo_quality) ... ok
+test_invalid_csv (test_app.AppTests.test_invalid_csv) ... ok
+test_labels_do_not_change_inference (test_app.AppTests.test_labels_do_not_change_inference) ... ok
+test_training_guards (test_app.AppTests.test_training_guards) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.702s
+
+OK
+
+Контрольный эксперимент:
+{
+  "labeled": 600,
+  "precision": 0.896551724137931,
+  "recall": 0.8666666666666667,
+  "f1": 0.8813559322033898,
+  "tp": 52,
+  "fp": 6,
+  "fn": 8,
+  "tn": 534
+}
